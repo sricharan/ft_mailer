@@ -9,6 +9,7 @@ class HomeController < ApplicationController
     @contact = Contact.new(params[:contact])
     ProfMailer.internship_email(@contact).deliver
     @contact.save
+    redirect_to home_index_path
   end 
 
 end
