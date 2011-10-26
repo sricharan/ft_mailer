@@ -1,0 +1,26 @@
+%div.post
+  %h1.title
+    = link_to "Mail-a-prof", "#"
+
+  %div.entry
+    - form_for @contact do |contact|
+      %table{:id => "new_eb"}
+        %tr
+          %td
+            %b Email
+          %td
+            = contact.text_field :email, :size => 25
+  
+        %tr
+          %td
+            %b Publication
+          %td
+            = contact.text_field :publication, :size => 25
+      %br
+      %br
+      %br
+      %br
+      = contact.submit
+           
+ 
+        

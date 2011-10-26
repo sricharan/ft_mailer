@@ -1,0 +1,42 @@
+!!!
+%html(xmlns="http://www.w3.org/1999/xhtml" xmlns:og = "http://ogp.me/ns#"  xmlns:fb ="http://www.facebook.com/2008/fbml")
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    - # This can be further customized here: http://developers.facebook.com/docs/reference/plugins/like/ -Anthony
+    %meta{:content => "Curriculum Vitae", :property => "og:title"}/
+    %meta{:content => "non_profit", :property => "og:type"}/
+    %meta{:content => "Curriculum Vitae", :property => "og:site_name"}/
+    %meta{:content => "http://sricharan-resume.heroku.com/images/iit_kharagpur_logo.png", :property => "og:image"}/
+    %link{ :rel => "shortcut icon", :href => "/images/iit_kharagpur_logo.png", :type => "image/x-icon"}/
+
+    %title
+      = "CV" 
+    = stylesheet_link_tag  "style", "navigation_bar", "slideshow"
+    = javascript_include_tag "jquery", "application","rails", "navigation", "jquery.countdown.pack"
+    = csrf_meta_tag
+
+
+  %body
+    
+    #page
+      #page-bgtop
+        #content
+          = yield
+        #sidebar
+          #countdown 
+          %br
+          %br
+          %br
+          %br
+          %br
+          %br
+          %ul
+            %li 
+        .clr
+      .clr
+    .clr
+    .clr
+    #footer
+       
+:javascript
+
