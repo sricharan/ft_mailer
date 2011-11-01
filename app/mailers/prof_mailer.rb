@@ -1,5 +1,5 @@
 class ProfMailer < ActionMailer::Base
-  default :from => "Sricharan Sunder <sricharan92@gmail.com>"
+  default :from => "Sricharan Sunder <sricharan@iitkgp.ac.in>"
  
   def internship_email(contact)
     @contact = contact
