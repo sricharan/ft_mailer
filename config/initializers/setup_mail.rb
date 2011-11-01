@@ -1,9 +1,9 @@
 ActionMailer::Base.smtp_settings = {
-  :address              => "smtp.gmail.com",
+  :address              => "smtp.iitkgp.ac.in",
   :port                 => 587,
-  :domain               => 'gmail.com',
-  :user_name            => 'sricharan92@gmail.com',
-  :password             => 'surya54sri7e',
+  :domain               => 'iitkgp.ac.in',
+  :user_name            => 'sricharan@iitkgp.ac.in',
+  :password             => 'sricharan09MT3008',
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 
