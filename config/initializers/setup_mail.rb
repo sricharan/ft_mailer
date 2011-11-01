@@ -1,7 +1,7 @@
 ActionMailer::Base.smtp_settings = {
-  :address              => "qmail.iitkgp.ac.in",
-  :port                 => 25,
-  :domain               => 'iitkgp.ac.in',
+  :address              => "10.3.100.244",
+  :port                 => 587,
+  :domain               => '10.3.100.244',
   :user_name            => 'sricharan@iitkgp.ac.in',
   :password             => 'sricharan09MT3008',
   :authentication       => 'plain',
